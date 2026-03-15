@@ -21,6 +21,19 @@
             bindings = <&kp>, <&kp>;
         };
     };
+   combos {
+        compatible = "zmk,combos";
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <POS_F POS_P>;
+            bindings = <&kp ESC>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <POS_W POS_P>;
+            bindings = <&kp TAB>;
+        };
+    };
 
 //    conditional_layers {
 //        compatible = "zmk,conditional-layers";
@@ -41,7 +54,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp Z      &kp X      &kp C      &kp D      &kp V          &lt 3 K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &lt 1 SPACE  &kp BSPC
+                                      &kp LSHFT   &ht LGUI ENTER     &lt 1 SPACE  &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
