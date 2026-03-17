@@ -19,7 +19,7 @@
             quick-tap-ms = <50>;
            require-prior-idle-ms = <80>;
         };
-        mt: hold_tap {
+        mt: layer_tap {
            compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             tapping-term-ms = <120>;
