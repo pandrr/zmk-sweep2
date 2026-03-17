@@ -9,31 +9,24 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
-&lt { 
-    quick_tap_ms = <150>; 
-    tapping-term-ms = <200>; 
-    require-prior-idle-ms = <125>;
-    flavor = "balanced";
-};
-&mt { 
-    quick_tap_ms = <150>; 
-    tapping-term-ms = <200>; 
-    require-prior-idle-ms = <125>;
-    flavor = "balanced";
-};
 
 / {
-//    behaviors {
-//        ht: hold_tap {
-//            compatible = "zmk,behavior-hold-tap";
-//            #binding-cells = <2>;
-//            flavor = "balanced";
-//            tapping-term-ms = <120>;
-//            quick-tap-ms = <50>;
-//           require-prior-idle-ms = <80>;
-//            //bindings = <&kp>, <&kp>;
-//        };
-//    };
+    behaviors {
+        ht: hold_tap {
+           compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <120>;
+            quick-tap-ms = <50>;
+           require-prior-idle-ms = <80>;
+        };
+        mt: hold_tap {
+           compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <120>;
+            quick-tap-ms = <50>;
+           require-prior-idle-ms = <80>;
+        };
+    };
 
 
    combos {
