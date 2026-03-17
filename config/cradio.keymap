@@ -15,7 +15,7 @@
             tapping-term-ms = <120>;
             quick-tap-ms = <50>;
            require-prior-idle-ms = <80>;
-}
+};
 
 &ht {
            compatible = "zmk,behavior-hold-tap";
@@ -23,7 +23,7 @@
             tapping-term-ms = <120>;
             quick-tap-ms = <50>;
            require-prior-idle-ms = <80>;
-}
+};
 
 / {
 
