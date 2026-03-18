@@ -21,7 +21,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <150>; 
+            require-prior-idle-ms = <225>; 
         };
     };
 
@@ -40,13 +40,6 @@
         };
     };
 
-//    conditional_layers {
-//        compatible = "zmk,conditional-layers";
-//        tri_layer {
-//            if-layers = <1 2>;
-//            then-layer = <3>;
-//        };
-//    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -71,7 +64,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &kp F13     &trans     &kp C_VOL_UP     &kp C_VOL_DN     &kp K_PLAY_PAUSE
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &kp F13     &trans     &kp C_VOL_DN     &kp C_VOL_UP     &kp K_PLAY_PAUSE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
